@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  margin: 20px
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 10px;
+}
+
+
+.about{
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#title {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+/* Seções */
+main section {
+  margin-bottom: 20px;
+  text-align: center;
+ 
+  
+}
+/* Projetos*/
+#projects ul{
+  list-style: none;
+}
+#projects ul li{
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+
+main h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Listas */
+ul {
+  margin-left: 20px;
+  list-style:none
+}
+
+/* Reviews */
+blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 10px;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+cite {
+  display: block;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 30px;
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+  body {
+    padding: 20px 40px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  #reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  #reviews h2 {
+    grid-column: span 3;
+  }
+  #reviews .review {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+  #projects, #experience, #education, #reviews, #articles {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+}
+
+
+
+
