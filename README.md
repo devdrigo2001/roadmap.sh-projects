@@ -4,5 +4,6 @@
   <li><a href="https://roadmap.sh/projects/single-page-cv">single-page-cv</a></li>
   <li><a href="https://roadmap.sh/projects/basic-html-website">basic-html-website</a></li>
   <li><a href="https://roadmap.sh/projects/portfolio-website">personal-website</a></li>
+  <li><a href="https://roadmap.sh/projects/changelog-component">changelog-component</a></li>
   
 </ol>
