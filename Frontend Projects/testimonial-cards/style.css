@@ -3,9 +3,7 @@
  margin: 0;
  
 }
-img{
-  border-radius: 50%;
-}
+
 
 body{
     font-family: Arial, sans-serif;
@@ -39,7 +37,7 @@ p {
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
+   
     
 }
 .card-highlighted {
@@ -55,11 +53,29 @@ p {
 
  
 
-.testimonial-user {
+.testimonial-avatars {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+ gap: 20px;
+}
+.avatar{
+    border-radius: 50%;
+    object-fit: cover;
+    transition:all 0.3s ease;
+}
+
+.avatar.active{
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+    transform: scale(1);
+}
+.avatar.faded{
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+    transform: scale(0.9);
 }
 
 
@@ -69,7 +85,7 @@ p {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #555;
+ 
 }
 
 
