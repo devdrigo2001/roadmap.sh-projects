@@ -1,0 +1,90 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      gap: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form {
+      width: 300px;
+    }
+    .form h2 {
+      margin-bottom: 15px;
+    }
+    .form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .form input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form input.error {
+      border-color: red;
+      background: #ffe5e5;
+    }
+    .error-message {
+      color: red;
+      font-size: 12px;
+    }
+    .btn {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .progress {
+      text-align: center;
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 8px solid #ccc;
+      border-top-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 auto 15px;
+    }
+    .tasks {
+      text-align: left;
+      font-size: 14px;
+    }
+    .tasks li {
+      margin: 5px 0;
+    }
+    .tasks li.done {
+      text-decoration: line-through;
+      color: #888;
+    }
+
+    .password-wrapper {
+      position: relative;
+    }
+    .toggle-eye {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 14px;
+      color: #555;
+    }
