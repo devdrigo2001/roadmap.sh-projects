@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabs</title>
+ <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="tabs-container">
+    <div class="tabs-header" role="tablist">
+      <button class="tab-button active" role="tab" aria-selected="true" data-tab="overview">Overview</button>
+      <button class="tab-button" role="tab" aria-selected="false" data-tab="features">Features</button>
+      <button class="tab-button" role="tab" aria-selected="false" data-tab="contact">Contact</button>
+    </div>
+    <section class="tab-content">
+      <div class="tab-panel active" id="overview" role="tabpanel">
+        <h2>Overview</h2>
+        <p>This example shows a lightweight tabs interface using HTML, CSS, and JavaScript. Click each tab to reveal the related content without reloading the page.</p>
+      </div>
+      <div class="tab-panel" id="features" role="tabpanel">
+        <h2>Features</h2>
+        <ul>
+          <li>Pure CSS styling for an elegant layout.</li>
+          <li>JavaScript-driven tab switching logic.</li>
+          <li>Responsive design for mobile and desktop.</li>
+        </ul>
+      </div>
+      <div class="tab-panel" id="contact" role="tabpanel">
+        <h2>Contact</h2>
+        <p>If you want to build more UI patterns like this, try adding keyboard navigation, animation, or nested tab groups.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
