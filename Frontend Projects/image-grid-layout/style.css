@@ -1,0 +1,100 @@
+:root {
+    --gap: 12px;
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --muted: #6b7280;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    background: var(--bg);
+    color: #111827;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 36px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 1.15rem;
+    margin: 0
+}
+
+p.lead {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--gap);
+}
+
+.card {
+    background: var(--card);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(16, 24, 40, 0.06);
+    transition: transform .18s ease, box-shadow .18s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.12)
+}
+
+.thumb {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    display: block;
+}
+
+.meta {
+    padding: 12px
+}
+
+.meta h3 {
+    margin: 0;
+    font-size: 0.98rem
+}
+
+.meta p {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.85rem
+}
+
+/* responsive tweaks */
+@media (max-width:520px) {
+    body {
+        padding: 18px
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
