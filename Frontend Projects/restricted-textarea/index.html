@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Restricted Textarea</title>
+</head>
+
+<body>
+    <main class="card" role="main">
+        <h1>Restricted Textarea</h1>
+        <p class="desc">A simple textarea with character limit, live count, and paste protection.</p>
+        <div class="wrap">
+            <textarea id="note" placeholder="Type your message..." aria-label="Restricted textarea"
+                maxlength="1000"></textarea>
+            <div class="meta">
+                <div id="counter" class="counter">0 / <span id="max">200</span></div>
+                <div class="rules">
+                    <div class="hint">Max characters: <strong id="maxHint">200</strong></div>
+                    <div class="hint">No paste beyond the limit</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
