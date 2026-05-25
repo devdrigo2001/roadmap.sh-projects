@@ -1,0 +1,107 @@
+:root {
+    --bg: #0b1120;
+    --card: #131b2c;
+    --text: #e8edf9;
+    --accent: #5de4ff;
+    --shadow: rgba(0, 0, 0, .25);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter, system-ui, sans-serif;
+    background: radial-gradient(circle at top left, #1e3a8a 0%, #0b1220 60%);
+    color: var(--text);
+}
+
+.container {
+    width: min(100%, 720px);
+    padding: 2rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, .06);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 20px 40px var(--shadow);
+}
+
+
+
+.tooltip-wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.25rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .12);
+    background: rgba(15, 23, 42, .95);
+    color: var(--text);
+    cursor: default;
+    transition: transform .2s ease;
+}
+
+.tooltip:hover {
+    transform: translateY(-2px);
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 0.75rem);
+    transform: translateX(-50%) scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    width: max-content;
+    max-width: 240px;
+    padding: 0.75rem 1rem;
+    background: rgba(15, 23, 42, .98);
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 0.85rem;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .2);
+    transition: opacity .18s ease, transform .18s ease;
+    z-index: 10;
+    text-align: center;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-4px) scale(1);
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 0.4rem);
+    transform: translateX(-50%);
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: rgba(15, 23, 42, .98) transparent transparent transparent;
+    opacity: 0;
+    transition: opacity .18s ease;
+}
+
+.tooltip:hover::before {
+    opacity: 1;
+}
