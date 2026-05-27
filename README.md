@@ -10,9 +10,9 @@
  <li> <a href="https://roadmap.sh/projects/accessible-form-ui"> acessible-form-ui</a></li>
   <li> <a href="https://roadmap.sh/projects/image-grid"> image-grid-layout</a></li>
   <li> <a href="https://roadmap.sh/projects/tooltip-ui"> tooltip-ui</a></li>
-  <li><a href="https://roadmap.sh/projects/simple-tabs"</a> tabs</li>
-  <li><a href="https://roadmap.sh/projects/cookie-consent"</a> cookie-consent</>
-  
+  <li><a href="https://roadmap.sh/projects/simple-tabs"> tabs</a></li>
+  <li><a href="https://roadmap.sh/projects/cookie-consent"> cookie-consent</a> </li>
+  <li><a href="https://roadmap.sh/projects/restricted-textarea"> restricted-textarea</a> </li>
  
   
 </ol>
